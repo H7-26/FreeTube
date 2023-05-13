@@ -570,7 +570,7 @@ const actions = {
       }
       if (payload.videoId != null) {
         if (cmdArgs.supportsYtdlProtocol) {
-          args.push(`${cmdArgs.videoUrl}ytdl://${payload.videoId}`)
+          args.push(`${cmdArgs.videoUrl}https://www.youtube.com/watch?v=${payload.videoId}`)
         } else {
           args.push(`${cmdArgs.videoUrl}https://www.youtube.com/watch?v=${payload.videoId}`)
         }
