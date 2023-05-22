@@ -21,6 +21,7 @@
           ref="videoPlayer"
           :dash-src="dashSrc"
           :source-list="activeSourceList"
+          :audio-tracks="audioTracks"
           :adaptive-formats="adaptiveFormats"
           :caption-hybrid-list="captionHybridList"
           :storyboard-src="videoStoryboardSrc"
@@ -143,6 +144,7 @@
         :channel-thumbnail="channelThumbnail"
         :channel-name="channelName"
         :video-player-ready="videoPlayerReady"
+        :force-state="commentsEnabled ? null : 'noComment'"
         @timestamp-event="changeTimestamp"
       />
     </div>
@@ -162,6 +164,7 @@
         v-if="watchingPlaylist"
         v-show="!isLoading"
         ref="watchVideoPlaylist"
+        :watch-view-loading="isLoading"
         :playlist-id="playlistId"
         :video-id="videoId"
         class="watchVideoSideBar watchVideoPlaylist"
