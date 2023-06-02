@@ -403,6 +403,11 @@ Settings:
     Hide Channel Playlists: Sakrij kanal zbirki
     Hide Channel Community: Sakrij kanal zajednice
     Hide Channel Shorts: Sakrij kanal kratkih videa
+    Sections:
+      Watch Page: Stranica gledanja
+      General: Opće
+      Side Bar: Bočna traka
+      Channel Page: Stranica kanala
   The app needs to restart for changes to take effect. Restart and apply change?: Promjene
     će se primijeniti nakon ponovnog pokeretanja programa. Ponovo pokrenuti program?
   Proxy Settings:
@@ -996,6 +1001,4 @@ Preferences: Korisničke postavke
 Ok: U redu
 Hashtag:
   This hashtag does not currently have any videos: Ovaj hashtag trenutačno nema videa
-  You can only view hashtag pages through the Local API: Stranice s hashtagovima možeš
-    gledati samo putem lokalnog API-ja
   Hashtag: Hashtag
